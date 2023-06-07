@@ -1,9 +1,9 @@
 import { FC } from 'react'
-import { PATHS } from './patchs'
 
 import AccountPage from '../pages/AccountPage'
-import MainPage from '../pages/MainPage'
 import Page404 from '../pages/Page404'
+
+import { PATHS } from './patchs'
 
 interface Routes {
   path: string
@@ -11,10 +11,6 @@ interface Routes {
 }
 
 export const routes: Routes[] = [
-  {
-    path: PATHS.MAIN,
-    component: MainPage,
-  },
   {
     path: PATHS.ACCOUNT,
     component: AccountPage,
